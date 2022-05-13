@@ -19,4 +19,4 @@
 <body class="<?= (isset($body))?$body:'' ?>">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
-<div id="app" class="min-vh-100">
+<div id="app" class="min-vh-100 position-relative overflow-hidden">
