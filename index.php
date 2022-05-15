@@ -103,7 +103,7 @@
                 foreach ($data as $k=>$v): ?>
                 <div class="home__modal__dialog-list__item" data-stt="<?=($k>2)?$v['stt']:''?>">
                     <div class="w-100">
-                        <div class="row">
+                        <div class="row align-items-center">
                             <div class="col">
                                 <span class="home__modal__dialog-list__txt"><?= $v['txt'] ?></span>
                             </div>
