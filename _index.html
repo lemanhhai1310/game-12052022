@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"  crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css?v=1652589098">
+    <link rel="stylesheet" href="style.css?v=1652617190">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
-    <script src="js/app.js?v=1652589098"></script>
+    <script src="js/app.js?v=1652617190"></script>
 </head>
 <body class="">
 <!-- Load Facebook SDK for JavaScript -->
@@ -81,9 +81,9 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
+    <!--myModal-entergame-->
     <div class="modal fade" id="myModal-entergame" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog home__modal__dialog-entergame">
+        <div class="modal-dialog modal-dialog-centered home__modal__dialog-entergame">
             <div class="modal-content">
                 <button type="button" class="close position-absolute home__modal__dialog-entergame__btnclose" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -103,8 +103,86 @@
             </div>
         </div>
     </div>
+    <!--/myModal-entergame-->
+
+    <!--myModal-list-->
+    <div class="modal fade" id="myModal-list" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered home__modal__dialog-list">
+            <div class="modal-content">
+                <button type="button" class="close position-absolute home__modal__dialog-entergame__btnclose" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="home__modal__dialog-list__header">
+                    <span>LEADERBOARD</span>
+                </div>
+                <div class="modal-body">
+                    <div class="home__modal__dialog-list__item" data-stt="">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <span class="home__modal__dialog-list__txt">uncanny</span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="home__modal__dialog-list__count">555</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__modal__dialog-list__item" data-stt="">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <span class="home__modal__dialog-list__txt">machiato</span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="home__modal__dialog-list__count">410</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__modal__dialog-list__item" data-stt="">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <span class="home__modal__dialog-list__txt">reaper</span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="home__modal__dialog-list__count">316</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__modal__dialog-list__item" data-stt="21">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <span class="home__modal__dialog-list__txt">justin</span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="home__modal__dialog-list__count">212</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__modal__dialog-list__item" data-stt="22">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <span class="home__modal__dialog-list__txt">Spear</span>
+                                </div>
+                                <div class="col-auto">
+                                    <span class="home__modal__dialog-list__count">123</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/myModal-list-->
     <script>
-        $('#myModal-entergame').modal('show');
+        $('#myModal-list').modal('show');
     </script>
 </div>
 <!--/app-->
