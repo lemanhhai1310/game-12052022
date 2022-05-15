@@ -37,9 +37,9 @@
         </div>
     </div>
 </div>
-<!-- Modal -->
+<!--myModal-entergame-->
 <div class="modal fade" id="myModal-entergame" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog home__modal__dialog-entergame">
+    <div class="modal-dialog modal-dialog-centered home__modal__dialog-entergame">
         <div class="modal-content">
             <button type="button" class="close position-absolute home__modal__dialog-entergame__btnclose" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -59,7 +59,67 @@
         </div>
     </div>
 </div>
+<!--/myModal-entergame-->
+
+<!--myModal-list-->
+<div class="modal fade" id="myModal-list" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered home__modal__dialog-list">
+        <div class="modal-content">
+            <button type="button" class="close position-absolute home__modal__dialog-entergame__btnclose" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="home__modal__dialog-list__header">
+                <span>LEADERBOARD</span>
+            </div>
+            <div class="modal-body">
+                <?php
+                $data = array(
+                    array(
+                        'txt' => 'uncanny',
+                        'count' => '555',
+                        'stt' => '',
+                    ),
+                    array(
+                        'txt' => 'machiato',
+                        'count' => '410',
+                        'stt' => '',
+                    ),
+                    array(
+                        'txt' => 'reaper',
+                        'count' => '316',
+                        'stt' => '',
+                    ),
+                    array(
+                        'txt' => 'justin',
+                        'count' => '212',
+                        'stt' => '21',
+                    ),
+                    array(
+                        'txt' => 'Spear',
+                        'count' => '123',
+                        'stt' => '22',
+                    ),
+                );
+                foreach ($data as $k=>$v): ?>
+                <div class="home__modal__dialog-list__item" data-stt="<?=($k>2)?$v['stt']:''?>">
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col">
+                                <span class="home__modal__dialog-list__txt"><?= $v['txt'] ?></span>
+                            </div>
+                            <div class="col-auto">
+                                <span class="home__modal__dialog-list__count"><?= $v['count'] ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/myModal-list-->
 <script>
-    $('#myModal-entergame').modal('show');
+    $('#myModal-list').modal('show');
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>
