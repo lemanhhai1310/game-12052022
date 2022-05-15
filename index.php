@@ -37,4 +37,29 @@
         </div>
     </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal-entergame" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog home__modal__dialog-entergame">
+        <div class="modal-content">
+            <button type="button" class="close position-absolute home__modal__dialog-entergame__btnclose" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body d-flex align-items-center text-center">
+                <div class="w-100 home__modal__dialog-entergame__box">
+                    <div class="home__modal__dialog-entergame__txt">ENTER YOUR NAME</div>
+                    <div>
+                        <input type="email" class="form-control home__modal__dialog-entergame__input" placeholder="|ENTER YOUR NAME" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div>
+                        <a href="" class="home__modal__dialog-entergame__btn1 btn btn-secondary">YES</a>
+                        <a href="" class="home__modal__dialog-entergame__btn2 btn btn-secondary">CANCEL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#myModal-entergame').modal('show');
+</script>
 <?php require "template-parts/layouts/footer.php"; ?>
