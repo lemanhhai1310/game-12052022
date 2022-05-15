@@ -95,6 +95,7 @@
         transform: translateY(-50%);
         display: flex;
         align-items: center;
+        justify-content: center;
         @extend .home__modal__dialog-list__count;
       }
       &__dc1{
