@@ -63,6 +63,13 @@
           }
         }
       }
+      &__t1{
+        color: #A2050D;
+        @extend .fz-25;
+        font-family: $font-Gotham-Regular;
+        line-height: 1.4;
+        text-indent: 5px;
+      }
       &__tx1{
         color: #4D4949;
         @extend .fz-25;

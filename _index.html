@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"  crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css?v=1652683228">
+    <link rel="stylesheet" href="style.css?v=1652684435">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
-    <script src="js/app.js?v=1652683228"></script>
+    <script src="js/app.js?v=1652684435"></script>
 </head>
 <body class="">
 <!-- Load Facebook SDK for JavaScript -->
@@ -223,8 +223,48 @@
         </div>
     </div>
     <!--/myModal-winner-->
+
+    <!--myModal-losing-->
+    <div class="modal fade" id="myModal-losing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered home__modal__dialog-winner">
+            <div class="modal-content">
+                <button type="button" class="close position-absolute home__modal__dialog-entergame__btnclose" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="home__modal__dialog-list__header">
+                    <span>GAME OVER</span>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="w-100 text-center home__modal__dialog-winner__box">
+                        <div>
+                            <div class="home__modal__dialog-winner__txt2">
+                                You've failed to eliminate at least 50 mosquitoes within 1 minute.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="position-relative text-left">
+                                <img class="position-relative" style="z-index: 99" src="images/characterframes1.png" alt="">
+                                <div style="padding-left: 150px;padding-right: 25px" class="home__modal__dialog-winner__box1 d-flex align-items-center justify-content-center text-center">
+                                    <div>
+                                        <div class="home__modal__dialog-winner__t1">Justyn is now affected by Dengue Virus and needs to be hospitalized!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__modal__dialog-winner__footer">
+                    <a href="" class="home__modal__dialog-winner__footer__icon home__modal__dialog-winner__footer__icon--home"></a>
+                    <a href="" class="home__modal__dialog-winner__footer__icon home__modal__dialog-winner__footer__icon--cup"></a>
+                    <a href="" class="home__modal__dialog-winner__footer__icon home__modal__dialog-winner__footer__icon--reload"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/myModal-losing-->
     <script>
-        $('#myModal-winner').modal('show');
+        $('#myModal-losing').modal('show');
     </script>
 </div>
 <!--/app-->
