@@ -119,7 +119,49 @@
     </div>
 </div>
 <!--/myModal-list-->
+
+<!--myModal-winner-->
+<div class="modal fade" id="myModal-winner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered home__modal__dialog-winner">
+        <div class="modal-content">
+            <button type="button" class="close position-absolute home__modal__dialog-entergame__btnclose" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="home__modal__dialog-list__header">
+                <span>CONGRATULATIONs!</span>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <div class="w-100 text-center home__modal__dialog-winner__box">
+                    <div>
+                        <div class="home__modal__dialog-winner__txt1">You have won the game!</div>
+                    </div>
+                    <div>
+                        <div class="position-relative text-left">
+                            <img class="position-relative" style="z-index: 99" src="images/characterframeswin1.png" alt="">
+                            <div class="home__modal__dialog-winner__box1 d-flex align-items-center justify-content-center text-center">
+                                <div>
+                                    <div class="home__modal__dialog-winner__tx1">Mosquitoes killed</div>
+                                    <div class="home__modal__dialog-winner__tx2">410</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="home__modal__dialog-winner__txt2">You are now <span>FULLY PROTECTED</span> <br>
+                            for 3 years</div>
+                    </div>
+                </div>
+            </div>
+            <div class="home__modal__dialog-winner__footer">
+                <a href="" class="home__modal__dialog-winner__footer__icon home__modal__dialog-winner__footer__icon--home"></a>
+                <a href="" class="home__modal__dialog-winner__footer__icon home__modal__dialog-winner__footer__icon--cup"></a>
+                <a href="" class="home__modal__dialog-winner__footer__icon home__modal__dialog-winner__footer__icon--reload"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/myModal-winner-->
 <script>
-    $('#myModal-list').modal('show');
+    $('#myModal-winner').modal('show');
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>
